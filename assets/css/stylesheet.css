@@ -1549,9 +1549,10 @@ input[type=submit] {
     row-gap: 1rem;
   }
 
-  /* === Pricing Section === */
-  /* Pricing Lists Cards Container */
-  .pricing-lists-cards-container.minor-flex-container {
+  /* === Pricing Section & Contact Us Section === */
+  .pricing-lists-cards-container,
+  .packages-cards-container,
+  .contact-form-card-container {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
   }
