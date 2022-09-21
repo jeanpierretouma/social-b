@@ -45,6 +45,9 @@ Users should be able to:
 - Flexbox
 - Grid
 - jQuery
+- [Normalize.css](https://necolas.github.io/normalize.css/)
+- [Animate.css](https://github.com/animate-css/animate.css)
+- [Glider.js](https://github.com/NickPiscitelli/Glider.js)
 
 ### What I learned
 
