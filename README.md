@@ -13,7 +13,7 @@ This is a landing page for Social'B. Social'B is a digital marketing agency that
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
-- [Process](#process)
+- [Author](#author)
 
 ## Overview
 
