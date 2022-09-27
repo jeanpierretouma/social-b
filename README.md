@@ -55,15 +55,15 @@ This project was a gig I worked on and it helped me get a glimpse of what it mea
 
 ### Continued development
 
-I'm satisfied with the way I designed and built this project because it was my first gig and the client was happy with the end result. It looks quite close to the design which tackles all users challenges and it works well.
+I'm satisfied with the way I designed and built this project because it was my first gig and the client was happy with the end result. It looks quite close to the design which tackles all users' challenges and it works well.
 
-After some testing on different browsers and devices, I discovered that there is a bug in the navigation bar that, when the browser window width is where the mobile navigation is, if the closing button is clicked to hide the navigation links, the navigation links don't reappear when the browser window width increases to where the desktop navigation menu is.
+After some testing on different browsers and devices, I discovered that there is a bug in the navigation bar that, when the browser window width is where the mobile navigation is if the closing button is clicked to hide the navigation links, the navigation links don't reappear when the browser window width increases to where the desktop navigation menu is.
 
-Another feautre that I'll implement in this project is JS form validation to increase security and interactive of the contact form of the landing page.
+Another feature that I'll implement in this project is JS form validation to increase the security and interaction of the contact form of the landing page.
 
 ### Useful resources
 
-- [A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid) - This article helped me understand the different ways to build layout with CSS Grid. I'd recommend it to people looks for different use cases of CSS Grid.
+- [A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid) - This article helped me understand the different ways to build a layout with CSS Grid. I'd recommend it to people looking for different use cases of CSS Grid.
 
 ## Author
 
