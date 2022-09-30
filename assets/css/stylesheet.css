@@ -1254,7 +1254,13 @@ input[type=submit] {
   .nav-link:link::after,
   .nav-link:visited::after {display: none;}
 
-  /* Mobile Nav */
+  /* Main Nav Mobile */
+  .main-nav-mobile {
+    display: block;
+    transition: all 0.3s;
+  }
+  
+  /* Mobile Icon */
   .mobile-nav-icon {
     display: -webkit-box;
     display: -ms-flexbox;

@@ -18,58 +18,32 @@ $(document).ready(function() {
   /* +++++| Nav Bar Container |+++++ */
   /* === Nav === */
   /* Sticky Nav */
-  $(".js--header-section").waypoint(function(direction) {
+  $(".header-section").waypoint(function(direction) {
     if (direction === "down") {
-      $(".js--nav-bar-container").addClass("sticky-nav");
+      $(".nav-bar-container").addClass("sticky-nav");
     } else {
-      $(".js--nav-bar-container").removeClass("sticky-nav");
+      $(".nav-bar-container").removeClass("sticky-nav");
     }}, {offset: "-1px;"}
   );
 
   /* Mobile Nav */
-  var $window = $(window);  /* Stores window size */
-  getWidths();  /* Gets window size */
-  $window.resize(getWidths);  /* Stores window size on resize */
+  const navBar = document.querySelector(".nav-bar-container");
+  const navBtn = document.querySelector(".mobile-nav-icon");
+  var menuBtn = document.querySelector(".uil-bars")
+  const navList = document.querySelector(".main-nav");
 
-  function getWidths() {
-    var browserWidth = $window.width();
-
-    /* When window size is less than 1023px */
-    if (browserWidth <= 1023) {
-
-      /* Reset slideToggle on resize */
-      $(".js--mobile-nav-icon").unbind("click");
-
-      /* Nav Menu dropdown */
-      $(".js--mobile-nav-icon").click(function () {
-        var mobile_icon = $(".js--mobile-nav-icon i");
-        
-        /* Switch Mobile Nav Icon on toggle */
-        if (mobile_icon.hasClass("uil-bars")) {
-          mobile_icon.addClass("uil-times");
-          mobile_icon.removeClass("uil-bars");
-        } else if (mobile_icon.hasClass("uil-times")) {
-          mobile_icon.addClass("uil-bars");
-          mobile_icon.removeClass("uil-times");
-        }
-
-        if ($(".js--nav-bar-container").hasClass("nav-bar-container-mobile")) {
-          $(".js--nav-bar-container").removeClass("nav-bar-container-mobile");
-        } else {
-          $(".js--nav-bar-container").addClass("nav-bar-container-mobile");
-        }
-        
-        var main_nav = $(".js--main-nav");
-        main_nav.slideToggle(200);
-      });
-
-    /* When window size is more than 1023px */
-    } else if (browserWidth > 1023) {
-      $(".js--mobile-nav-icon").unbind("click");
-      $(".js--mobile-nav-icon").unbind("slideToggle");
-      $(".js--nav-menu").css("display", "block");
+  navBtn.addEventListener("click", function() {
+    if (menuBtn.classList.contains("uil-bars")) {
+      menuBtn.classList.add("uil-times");
+      menuBtn.classList.remove("uil-bars");
+    } else if (menuBtn.classList.contains("uil-times")) {
+      menuBtn.classList.add("uil-bars");
+      menuBtn.classList.remove("uil-times");
     }
-  }
+
+    navBar.classList.toggle("nav-bar-container-mobile");
+    navList.classList.toggle("main-nav-mobile");
+  });
 
 
 
